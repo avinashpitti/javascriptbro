@@ -1,12 +1,14 @@
 // change the datatype of a value to another(strings,numbers,booleans)
-let age=window.prompt("How old are you?");
-age+=1;
-// here it considers as a string.
-console.log(age,typeof age);
+let a="pizza";
+let b="pizza";
+let c="pizza";
 
-let years=window.prompt("how many years do you have?");
-years=Number(years);
-years+=1;
-// here it considers as a number.
-console.log(years,typeof years);
+a=Number(a); // here it is considered as nan
+b=String(b); // it is already a string
+c=Boolean(c); // Boolean is considered as true if you give any kind of value except 0.
+
+
+console.log(a,typeof a);
+console.log(b,typeof b);
+console.log(c,typeof c);
 
