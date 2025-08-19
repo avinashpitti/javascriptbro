@@ -1,10 +1,14 @@
-// Math  a built in object that provides a collection of properties and methods.
-document.writeln(Math.PI +"<br>");  
-document.writeln(Math.E+"<br>");
-document.writeln(Math.SQRT2 +"<br>" )
+const bulb=document.getElementById("myImage");
+const onBtn=document.getElementById("onBtn");
+const offBtn=document.getElementById("offBtn");
 
-let x=-3.22;
+const on="bulbon.jpeg";
+const off="bulboff.jpg";
 
-z=Math.ceil(x);
+onBtn.addEventListener("click", () => {
+  bulb.src = on;
+});
 
-console.log(z);
+offBtn.addEventListener("click", () => {
+  bulb.src = off;
+});
