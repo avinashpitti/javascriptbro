@@ -13,7 +13,7 @@ console.log(f);
 var g=3;
 var g=44; // redclare 
 var h;
-var h=6; //reassign
+h=6; //reassign
 var i=g+h;
 console.log(i);
 
