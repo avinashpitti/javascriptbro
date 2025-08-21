@@ -52,34 +52,50 @@ switch(month){
 };
 
 
-let marks=62;
+
+
+document.getElementById("but").addEventListener("click",function(){
+let marks=parseInt(document.getElementById("marks").value);
 let grade;
+let result=document.getElementById("result");
+
 
 switch(true){
     case marks>=90:
         grade="A";
+        result.style.color="green";
         break;
 
     case marks>=75:
         grade="B";
+        result.style.color="lightgreen";
         break;
 
     case marks>=60:
         grade="C";
+        result.style.color="yellowgreen";
         break;
 
     case marks>=50:
         grade="D";
+        result.style.color="yellow";
         break;
 
     case marks>=40:
         grade="E";
+        result.style.color="orange";
         break;
 
     case marks<40:
         grade="Fail";
+        result.style.color="red";
         break;
-};
 
-console.log("Grade of a student is ",grade);
+    default:
+        grade="Empty/Invalid input";
+}
+
+result.textContent="Grade of a student is "+grade;
+
+});
 
