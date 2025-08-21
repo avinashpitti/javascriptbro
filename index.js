@@ -1,69 +1,85 @@
-let game="cricket";
-let captain="Ms Dhoni";
-let batter="sachin"
-
-if(game=="ricket"){
-    console.log("Indian cricket captain is ",captain);
-}
-
-else if(batter=="achin"){
-    console.log(batter," is the best batter");
-}
-
-else{
-    console.log("neither captain nor batter")
-}
 
 
-let x=100;
-let y=50;
-let z=200;
+let month=7;
 
-if(x>y && x>z){
-    console.log("x is the greatest number");
-}
-else if(x>y && x<z){
-    console.log("x is just greater than y");
-}
-else{
-    console.log("x is the smallest number")
-}
+switch(month){
+    case 1:
+        console.log("It is january");
+        break;
+    case 2:
+        console.log("It is February");
+        break;
+        
+    case 3:
+        console.log("It is March");
+        break;
+
+    case 4:
+        console.log("It is April");
+        break;
+
+    case 5:
+        console.log("It is May");
+        break;
+
+    case 6:
+        console.log("It is June");
+        break;
+
+    case 7:
+        console.log("It is July");
+        break;
+
+    case 8:
+        console.log("It is August");
+        break;
+
+    case 9:
+        console.log("It is September");
+        break;
+
+    case 10:
+        console.log("It is October");
+        break;
+
+    case 11:
+        console.log("It is November");
+        break;
+
+    case 12:
+        console.log("It is December");
+        break;
+};
 
 
+let marks=62;
+let grade;
 
+switch(true){
+    case marks>=90:
+        grade="A";
+        break;
 
-document.getElementById("but").addEventListener("click",function(){
-let day=document.getElementById("day").value.toLowerCase();
+    case marks>=75:
+        grade="B";
+        break;
 
-// if we have to give both short forms and long forms
-if(day=='mon' || day=='monday'){
-    console.log("Monday");
-}
+    case marks>=60:
+        grade="C";
+        break;
 
-else if(day=='tue'){
-    console.log("Tuesday");
-}
+    case marks>=50:
+        grade="D";
+        break;
 
-else if (day=='wed'){
-    console.log("Wednesday");
-}
+    case marks>=40:
+        grade="E";
+        break;
 
-else if (day=='thu'){
-    console.log("Thursday");
-}
+    case marks<40:
+        grade="Fail";
+        break;
+};
 
-else if (day=='fri'){
-    console.log("Friday");
-}
+console.log("Grade of a student is ",grade);
 
-else if(day=='sat'){
-    console.log("Saturday");
-}
-
-else if(day=="sun"){
-    console.log("Sunday");
-}
-
-else{
-    console.log("You entered wrong word");
-}});
