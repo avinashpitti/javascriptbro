@@ -35,8 +35,8 @@ else{
 document.getElementById("but").addEventListener("click",function(){
 let day=document.getElementById("day").value.toLowerCase();
 
-
-if(day=='mon'){
+// if we have to give both short forms and long forms
+if(day=='mon' || day=='monday'){
     console.log("Monday");
 }
 
