@@ -1,9 +1,15 @@
+// while loop checks the condition before running the block.
+//Do while loop runs the block first, then checks the condition.
+let i=1;
+do{
+    document.writeln("The number is ",i,"<br>");
+    i++;
+}while(i<=5);
 
-for(let i=1;i<=10;i++){
-    document.writeln(i+")");
-    document.writeln("i love india","<br>");
-}
+let x=10;
+do{
+    document.writeln("It runs atlest once even if the condition is wrong ",x);
+    i++;
+}while(x<5);
 
-for(let j=31;j<=40;j++){
-    document.writeln(j+")"+"I love my country"+"<br>");
-}
+
