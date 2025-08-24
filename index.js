@@ -1,23 +1,20 @@
-let carName="volvo"
-myFunction();
+const hello =()=>console.log("Avinash is drastically changing.");
+hello();
 
-function myFunction(){
-    document.getElementById("para").innerHTML=carName;
-}
+const numbers=[1,2,3,4,5,6];
 
-function myFunction(){
-    let name="tata";
-    console.log(name);
-};
+const squares=numbers.map((Element)=>Math.pow(Element,2));
+console.log(squares);
 
-function myFunction(){
-    var name="tata";
-    console.log(name);
-};
+const cubes=numbers.map((Element)=>Math.pow(Element,3));
+console.log(cubes);
 
-function myFunction(){
-    const name="tata";
-    console.log(name);
-};
+const evenNumbers=numbers.filter((Element)=>Element%2===0,Element);
+console.log(evenNumbers);
 
-// variable name is same for all so one overrides the before finally only const name displays.
+const oddNumbers=numbers.map((Element)=>Element%2!==0);
+console.log(oddNumbers);
+
+const total=numbers.reduce((accumulator,Element) =>accumulator+Element);
+console.log(total);
+
